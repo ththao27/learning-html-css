@@ -1,0 +1,12 @@
+.registration.UIPage {
+    --rem: 16;
+    background: #fff;
+    color: #1c1e21;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0px;
+    padding: 0px;
+    unicode-bidi: embed;
+    font-size: 12px;
+    overflow-y: scroll;
+}
