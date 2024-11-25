@@ -11,12 +11,63 @@
                     <img class="fb_logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
                 </div>
             </div>
-            <div class="registration">
-                <div class="registrationForm">
-                    <div class="registrationFormHeader">
-                       <div class="headerText">Create a new account</div>
-                       <div class="description">It's quick and easy.</div>
-                    </div>
+            <div class="container">
+                <div class="form-container">
+                    <h2>Create a new account</h2>
+                    <p>It's quick and easy.</p>
+                    <form>
+                        <div class="name-container">
+                            <input type="text" placeholder="First name" required>
+                            <input type="text" placeholder="Surname" required>
+                        </div>
+                        <label for="dob">Date of birth</label>
+                        <div class="date-container">
+                            <select name="dob-day" required>
+                                <option value="" disabled selected>Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <select name="dob-month" required>
+                                <option value="" disabled selected>Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                            </select>
+                            <select name="dob-year" required>
+                                <option value="" disabled selected>Year</option>
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                            </select>
+                        </div>
+                        <label for="gender">Gender</label>
+                        <div class="gender-container">
+                            <label>
+                                <input type="radio" name="gender" value="female" required> Female
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="male" required> Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="custom" required> Custom
+                            </label>
+                        </div>
+
+                        <div> <input type="email" placeholder="Mobile number or email" name="email" required> </div>
+                        <div> <input type="password" placeholder="New password" name="password" required> </div>
+
+                        <button type="submit" class="signup-btn">Sign Up</button>
+                        
+                        <p class="_58mv">People who use our service may have uploaded your contact information to Facebook. 
+                            <a href="/help/637205020878504" id="non-users-notice-link" target="_blank" rel="nofollow">Learn more</a>.
+                        </p>
+                        <p class="_58mv">By clicking Sign Up, you agree to our 
+                            <a href="/legal/terms/update" id="terms-link">Terms</a>, 
+                            <a href="/about/privacy/update" id="privacy-link">Privacy Policy</a> and 
+                            <a href="/policies/cookies/" id="cookie-use-link">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+                        </p>
+                    </form>
                 </div>
             </div>
         </div>
