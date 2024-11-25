@@ -2,71 +2,92 @@
 <html>
     <head>
         <title>Sign Up</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="registration UIPage">
-        <div id="globalContainer" class="uiContextualLayerParent">
-            <div class="fb_content" id="content" role="main">
-                <div class="logo">
-                    <img class="fb_logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
+    <body class="registration ui_page">
+        <div>
+            <div id="global_container" class="ui_contextual_layer_parent">
+                <div class="fb_content" id="content" role="main">
+                    <div class="logo">
+                        <img class="fb_logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
+                    </div>
                 </div>
             </div>
             <div class="container">
-                <div class="form-container">
+                <div class="form_container">
                     <h2>Create a new account</h2>
-                    <p>It's quick and easy.</p>
+                    <p class="centered-text">It's quick and easy.</p>
                     <form>
-                        <div class="name-container">
+                        <div class="name_container">
                             <input type="text" placeholder="First name" required>
                             <input type="text" placeholder="Surname" required>
                         </div>
-                        <label for="dob">Date of birth</label>
-                        <div class="date-container">
-                            <select name="dob-day" required>
-                                <option value="" disabled selected>Day</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <select name="dob-month" required>
-                                <option value="" disabled selected>Month</option>
-                                <option value="1">January</option>
-                                <option value="2">February</option>
-                                <option value="3">March</option>
-                            </select>
-                            <select name="dob-year" required>
-                                <option value="" disabled selected>Year</option>
-                                <option value="1990">1990</option>
-                                <option value="1991">1991</option>
-                                <option value="1992">1992</option>
-                            </select>
-                        </div>
-                        <label for="gender">Gender</label>
-                        <div class="gender-container">
-                            <label>
-                                <input type="radio" name="gender" value="female" required> Female
-                            </label>
-                            <label>
-                                <input type="radio" name="gender" value="male" required> Male
-                            </label>
-                            <label>
-                                <input type="radio" name="gender" value="custom" required> Custom
-                            </label>
+                        <div class="birthday_container" id="birthday_wrapper">
+                            <label for="dob">Date of birth</label>
+                            <div class="date_container">
+                                <span class="dob_date"> 
+                                    <select name="dob_day" required>
+                                        <option value="" disabled selected>Day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <select name="dob_month" required>
+                                        <option value="" disabled selected>Month</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                    </select>
+                                    <select name="dob_year" required>
+                                        <option value="" disabled selected>Year</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1992">1992</option>
+                                    </select>
+                                </span>
+                            </div>
                         </div>
 
-                        <div> <input type="email" placeholder="Mobile number or email" name="email" required> </div>
-                        <div> <input type="password" placeholder="New password" name="password" required> </div>
+                        <div class="gender_box">
+                            <label for="gender">Gender</label>
+                            <span class="gender_wrapper" data_type="radio">
+                                <span class="gender_container">
+                                    <label class="gender_label">Female
+                                        <input type="radio" class="gender_input" id="sex" name="sex" value="1">
+                                    </label>
+                                </span>
+                                <span class="gender_container">
+                                    <label class="gender_label">Male
+                                        <input type="radio" class="gender_input" id="sex" name="sex" value="2">
+                                    </label>
+                                </span>
+                                <span class="gender_container">
+                                    <label class="gender_label">Custom
+                                        <input type="radio" class="gender_input" id="sex" name="sex" value="-1">
+                                    </label>
+                                </span>
+                            </span>
+                        </div>
 
-                        <button type="submit" class="signup-btn">Sign Up</button>
-                        
-                        <p class="_58mv">People who use our service may have uploaded your contact information to Facebook. 
-                            <a href="/help/637205020878504" id="non-users-notice-link" target="_blank" rel="nofollow">Learn more</a>.
+                        <div class="email"> <input type="email" placeholder="Mobile number or email" name="email" required> </div>
+                        <div class="password"> <input type="password" placeholder="New password" name="password" required> </div>     
+                                        
+                        <p class="learn_more">People who use our service may have uploaded your contact information to Facebook. 
+                            <a href="/help/637205020878504" id="non_users_notice_link" target="_blank" rel="nofollow">Learn more</a>.
                         </p>
-                        <p class="_58mv">By clicking Sign Up, you agree to our 
-                            <a href="/legal/terms/update" id="terms-link">Terms</a>, 
-                            <a href="/about/privacy/update" id="privacy-link">Privacy Policy</a> and 
-                            <a href="/policies/cookies/" id="cookie-use-link">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+                        <p class="terms_policy">By clicking Sign Up, you agree to our 
+                            <a href="/legal/terms/update" id="terms_link">Terms</a>, 
+                            <a href="/about/privacy/update" id="privacy_link">Privacy Policy</a> and 
+                            <a href="/policies/cookies/" id="cookie_use_link">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
                         </p>
+
+                        <div class="button_container">  
+                            <button type="submit" class="signup_btn">Sign Up</button>
+                        </div>
+                        <div class="link_create_acc">
+                            <a href="/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzMyNTUyNjUwLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D" aria-label="Already have an account?">Already have an account?
+                            </a>
+                        </div>
                     </form>
                 </div>
             </div>
